@@ -1,0 +1,141 @@
+body {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.5em;
+    margin: 0;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+header {
+    background-color: #5300C8;
+    padding: 1rem 0;
+}
+
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    color: #ffffff;
+}
+
+.products {
+    margin-bottom: 2rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.product {
+    font-family: "IBM Plex Mono", monospace;
+    font-style: normal;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 4px;
+    background-color: #5300C8;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    color: #ffffff;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #000000;
+
+}
+
+.product h3 {
+    font-size: 2em;
+    margin: 8px 4px;
+}
+
+.product p {
+    font-size: 2em;
+    margin: 4px 4px;
+}
+
+.add-product {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.add-product h2 {
+    margin-bottom: 1rem;
+}
+
+.add-product form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-product label {
+    margin-bottom: 0.5rem;
+}
+
+.add-product input[type="text"],
+.add-product input[type="number"],
+.add-product input[type="url"] {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+}
+
+.add-product button {
+    color: #ffffff;
+    border: none;
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: bold;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#submit {
+    background-color: #03318C;
+}
+
+#reset{
+    background-color: #ffffff;
+    color: #03318C;
+    border-color: #03318C;
+    border-style: solid;
+}
+
+footer {
+    background-color: #ff00ff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
