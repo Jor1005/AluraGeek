@@ -1,0 +1,17 @@
+{
+    "productos": [
+        {
+         "id": 1,
+         "nombre": "Stormtrooper",
+         "precio": "$60,00",
+         "imagen": "https://github.com/Jor1005/AluraGeek/blob/main/Assets/Stormtrooper.jpg?raw=true"
+        },
+
+        {
+         "id": 2,
+         "nombre": "Gameboy",
+         "precio": "$60,00",
+         "imagen": "https://github.com/Jor1005/AluraGeek/blob/main/Assets/Gameboy.jpg?raw=true"
+        }
+    ]
+}
