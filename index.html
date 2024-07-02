@@ -31,13 +31,19 @@
             </section>
             <section class="add-product">
                 <h2>AGREGAR PRODUCTO:</h2>
-                <form action="#">
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="price">Precio:</label>
-                    <input type="number" id="price" name="price" required>
-                    <label for="image">Imagen:</label>
-                    <input type="url" id="image" name="image" required>
+                <form action="#" data-formulario>
+                    <div class="campo_formulario">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required data-nombre>
+                    </div>
+                    <div class="campo_formulario">
+                        <label for="price">Precio:</label>
+                        <input type="number" id="price" name="price" required data-precio>
+                    </div>
+                    <div class="campo_formulario">
+                        <label for="image">Imagen:</label>
+                        <input type="url" id="image" name="image" required data-imagen>
+                    </div>
                     <div class="buttons">
                         <button id="submit" type="submit">Enviar</button>
                         <button id="reset" type="reset">Limpiar</button>
@@ -56,4 +62,5 @@
     </footer>
 </body>
 <script src="js\mostrarProductos.js" type="module"></script>
+<script src="js\crearProducto.js" type="module"></script>
 </html>
