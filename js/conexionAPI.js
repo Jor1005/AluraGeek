@@ -3,7 +3,7 @@ async function ListarProductos(){
 
     const conexionConvertida = conexion.json();
 
-    // console.log (conexionConvertida);
+   
 
     return conexionConvertida
 }

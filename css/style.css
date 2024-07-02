@@ -68,7 +68,7 @@ h1 {
     border-radius: 10px;
     border-style: solid;
     border-color: #000000;
-
+    object-fit: cover;
 }
 
 .product h3 {
@@ -190,6 +190,13 @@ footer p {
         flex-direction: column-reverse;
     }
     
-    
+    .product img {
+        width: auto;
+        height: 160px;
+        border-radius: 10px;
+        border-style: solid;
+        border-color: #000000;
+        object-fit: cover;
+    }
     
 }
