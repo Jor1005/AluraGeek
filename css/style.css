@@ -8,6 +8,12 @@ body {
     color: #000000;
 }
 
+.wrapper {
+    min-height: 100vh; /* Establece una altura mínima del 100% de la pantalla */
+    display: flex; /* Establece un layout de flexbox */
+    flex-direction: column; /* Establece la dirección del layout en columna */
+}
+
 header {
     background-color: #5300C8;
     padding: 1rem 0;
@@ -134,6 +140,7 @@ footer {
     background-color: #ff00ff;
     padding: 1rem 0;
     text-align: center;
+    margin-top: auto;
 }
 
 footer p {
