@@ -122,6 +122,9 @@ h1 {
 .buttons{
     display: flex;
     justify-content: space-between;
+}
+
+.delete-button {
     
 }
 
