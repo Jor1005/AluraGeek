@@ -23,8 +23,19 @@ async function enviarProducto(nombre,precio,imagen){
     return conexionConvertida
 }
 
-export const conexionAPI={
-    ListarProductos,enviarProducto
+async function borrarProducto(id) {
+    const conexion = await fetch(`http://localhost:3001/productos/${id}`, {
+        method: "DELETE",
+        headers: { "Content-type": "application/json" }
+    });
+    if (conexion.ok) {
+        return { mensaje: "Producto eliminado" };
+    } else {
+        throw new Error("No se pudo eliminar el producto");
+    }
 }
 
-// ListarProductos();
+
+export const conexionAPI={
+    ListarProductos,enviarProducto,borrarProducto
+}

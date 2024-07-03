@@ -3,6 +3,7 @@ import { conexionAPI } from "./conexionAPI.js";
 const lista = document.querySelector("[data-producto]");
 const formulario = document.querySelector("[data-formulario]");
 
+
 function crearCard(nombre, precio, imagen, id) {
   const producto = document.createElement("li");
   producto.className = "product";
@@ -10,10 +11,27 @@ function crearCard(nombre, precio, imagen, id) {
                          <h3>${nombre}</h3>
                          <p>$${precio} </p>
                          <button class="delete-button" data-id= "${id}">
-                            <img src="\Assets\trash.jpg" alt="Eliminar">  
+                          Eliminar  
                          </button>`;
-  return producto;
+
+const eliminacion = (producto, id) => {
+  conexionAPI.borrarProducto(id)
+      .then(() => {
+          producto.remove();
+          alert("Producto eliminado");
+      })
+      .catch((err) => console.log(err));
+};
+  
+const deleteButton = producto.querySelector(".delete-button");
+deleteButton.addEventListener("click", () => eliminacion(producto,id));
+
+return producto;
 }
+
+
+
+
 
 async function listarProductos() {
   const listAPI = await conexionAPI.ListarProductos();
@@ -39,3 +57,4 @@ async function crearProducto(evento) {
 
 formulario.addEventListener("submit", (evento) => crearProducto(evento));
 listarProductos();
+
