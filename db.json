@@ -1,22 +1,28 @@
 {
   "productos": [
     {
-      "id": 1,
-      "nombre": "Stormtrooper",
-      "precio": "60,00",
-      "imagen": "https://github.com/Jor1005/AluraGeek/blob/main/Assets/Stormtrooper.jpg?raw=true"
-    },
-    {
-      "id": 2,
-      "nombre": "Gameboy",
-      "precio": "60,00",
+      "id": "3386",
+      "nombre": "GameBoy",
+      "precio": "60",
       "imagen": "https://github.com/Jor1005/AluraGeek/blob/main/Assets/Gameboy.jpg?raw=true"
     },
     {
-      "id": "9ae7",
-      "nombre": "hola",
-      "precio": "22",
-      "imagen": "https://github.com/Jor1005/AluraGeek/blob/main/Assets/Gameboy.jpg?raw=true"
+      "id": "29c0",
+      "nombre": "Taza Skyrim",
+      "precio": "20",
+      "imagen": "https://static.posters.cz/image/750/tazas/skyrim-vista-i32781.jpg"
+    },
+    {
+      "id": "3875",
+      "nombre": "Lámpara Nintendo",
+      "precio": "50",
+      "imagen": "https://lacamaleona.com/cdn/shop/products/mario-bros-lampara-nintendo-4_1024x1024@2x.png?v=1656520314"
+    },
+    {
+      "id": "9f3b",
+      "nombre": "Figura Dark Souls",
+      "precio": "70",
+      "imagen": "https://www.shinestar.es/24660-large_default/FDSASA11.jpg"
     }
   ]
 }

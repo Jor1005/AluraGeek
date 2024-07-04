@@ -4,15 +4,17 @@ const lista = document.querySelector("[data-producto]");
 const formulario = document.querySelector("[data-formulario]");
 
 
+
 function crearCard(nombre, precio, imagen, id) {
   const producto = document.createElement("li");
   producto.className = "product";
   producto.innerHTML = `<img src="${imagen}" alt="${nombre}">
                          <h3>${nombre}</h3>
-                         <p>$${precio} </p>
-                         <button class="delete-button" data-id= "${id}">
-                          Eliminar  
-                         </button>`;
+                         <div class="product-e">
+                            <p>$ ${precio} </p>
+                            <button class="delete-button" data-id= "${id}"> <img src="assets/trash.png" alt="Eliminar">
+                            </button>
+                        </div>`;
 
 const eliminacion = (producto, id) => {
   conexionAPI.borrarProducto(id)
